@@ -4,6 +4,9 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'super-rentals',
     environment,
+    contentSecurityPolicy: { 'connect-src': " 'self' https://csi.gstatic.com wss://.googleapis.com self' https://auth.firebase.com wss://*.firebaseio.com" },
+
+    firebase: 'https://embercarsapp.firebaseio.com/',
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {
@@ -21,6 +24,14 @@ module.exports = function(environment) {
       // Here you can pass flags/options to your application instance
       // when it is created
     }
+  };
+  var config = {
+    apiKey: "AIzaSyCQaQ4-5EswG3RklNsmTXdwRsWsCkplTlg",
+    authDomain: "embercarsapp.firebaseapp.com",
+    databaseURL: "https://embercarsapp.firebaseio.com",
+    projectId: "embercarsapp",
+    storageBucket: "embercarsapp.appspot.com",
+    messagingSenderId: "901443455032"
   };
 
   if (environment === 'development') {

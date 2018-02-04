@@ -1,0 +1,6 @@
+{
+  "name": "super-rentals",
+  "dependencies": {
+    "firebase": "^2.1.0"
+  }
+}
